@@ -4,10 +4,10 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "node function/index.js",
+    "start": "node index.js",
     "build-server": "ng build && ngc",
     "start-ts" : "ts-node src/server.ts",
-    "start-js" : "node function/index.js",
+    "start-js" : "node index.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
