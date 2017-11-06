@@ -4,6 +4,7 @@
     "license": "MIT",
     "scripts": {
         "ng": "ng",
+        "serve":"ng serve", 
         "start": "node index.js",
         "build-server": "ng build && ngc",
         "start-ts": "ts-node src/server.ts",
