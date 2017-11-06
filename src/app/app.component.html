@@ -1,13 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <input [(ngModel)]="toAdd" (keypress)="keyPress($event.keyCode)" placeholder="Testo">
-  <button (click)="onClick()">Schiaccia</button>
-  <ul>
-    <li *ngFor="let m of messages; let i = index">
-      {{m.text}} <button (click)="router(i)">Del</button> <button (click)="del(i)">Del</button>
-    </li>
-  </ul>
-  {{ruot}}
-  <button (click)="onSave()">Save</button>
+
+<menu></menu>
+
+<router-outlet></router-outlet>
