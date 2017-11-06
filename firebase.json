@@ -1,8 +1,9 @@
 {
-    "functions": {
-        "source": "./"
-    },
-    "ignore": [
-    "**/node-modules/**"
-    ]
+    "hosting": {
+        "public": "dist",
+        "rewrites": [{
+            "source": "**",
+            "function": "ssr"
+        }]
+    }
 }
