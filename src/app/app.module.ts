@@ -7,8 +7,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from "./components/home";
 import { AppartamentiComponent } from "./components/appartamenti";
 import { MenuComponent } from "./components/menu";
+import { SectionComponent } from "./components/section";
+import { HeaderComponent } from "./components/header";
 
-import { ApartamentService } from "./services/services";
+import { DataService } from "./services/services";
 
 
 const appRoutes: Routes = [
@@ -30,7 +32,9 @@ const appRoutes: Routes = [
         AppComponent,
         HomeComponent,
         AppartamentiComponent,
-        MenuComponent
+        MenuComponent,
+        SectionComponent,
+        HeaderComponent,
     ],
     imports: [
         RouterModule.forRoot(
@@ -39,7 +43,7 @@ const appRoutes: Routes = [
         BrowserModule.withServerTransition({appId: 'angular-universal-demo'}),
         FormsModule
     ],
-    providers: [ApartamentService],
+    providers: [DataService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
