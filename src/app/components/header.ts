@@ -1,4 +1,4 @@
-import { Component, Input, Injectable, OnInit } from '@angular/core';
+import { Component, Input, Injectable, OnInit, AfterViewInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { DataService } from '../services/services'
 import { ItemHeader } from '../model/models'
@@ -9,13 +9,13 @@ declare var $ :any;
     selector: 'header',
     templateUrl: '../templates/header.html'
 })
-export class HeaderComponent implements OnInit  {
+export class HeaderComponent implements AfterViewInit  {
 
     constructor(private dataService: DataService) { }
 
     items: ItemHeader[] = this.dataService.getHeaderItems();
 
-    ngOnInit() {
+    ngAfterViewInit() {
         console.log(this.items);
         $(".parallax-slider").parallaxSlider({
 

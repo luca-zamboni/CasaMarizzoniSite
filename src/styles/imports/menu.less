@@ -1,16 +1,21 @@
 @import "general";
 
-.navbar-default{
+menu{
+    margin: 0;
+}
 
+.navbar-default{
 
     @menu-transition:0.2s;
 
     // .gradiente-background;
     margin-bottom: 0px;
+    margin-right: 0px;
     position: absolute;
     bottom: 0;
     z-index: 999;
-    width: 100%;
+    left:0;
+    right: 0;
     //border-bottom: 1px solid @marrone-scuro;
     //border-top: 1px solid @marrone-scuro;
     border: 0;
@@ -18,6 +23,18 @@
     background-color: @marrone-chiaro;
     // .verticalgradient( @marrone-chiaro,@arancio-marrone);
     // background-color: #fff;
+
+    //// centrati
+    .navbar-nav {
+        float:none;
+        margin:0 auto;
+        display: inline-block;
+        text-align: center;
+        li {
+            display: inline-block;
+            float:none;
+        }
+    }
 
     .navbar-brand{
         color:@marrone-scuro;
@@ -28,11 +45,6 @@
         width: 30px;
         height: 22px;
     }
-
-    .navbar {
-
-    }
-
 
     .navbar-nav>li.item::before{
         left: 0;

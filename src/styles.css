@@ -16,9 +16,9 @@
 hr.myhr {
   border-top: 1px solid #8c6239;
 }
-.row {
-  display: table;
-}
+/*.row{
+    display: table;
+}*/
 .margin-top {
   margin-top: 4rem;
 }
@@ -221,15 +221,30 @@ figure.effect-bubba:hover p {
   letter-spacing: 1px;
   font-size: 68.5%;
 }
+menu {
+  margin: 0;
+}
 .navbar-default {
   margin-bottom: 0px;
+  margin-right: 0px;
   position: absolute;
   bottom: 0;
   z-index: 999;
-  width: 100%;
+  left: 0;
+  right: 0;
   border: 0;
   border-radius: 0;
   background-color: #eecaa2;
+}
+.navbar-default .navbar-nav {
+  float: none;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+}
+.navbar-default .navbar-nav li {
+  display: inline-block;
+  float: none;
 }
 .navbar-default .navbar-brand {
   color: #8c6239;
@@ -510,7 +525,7 @@ header .header-content .promo-cont .promotion-cicle:before {
   border-bottom: 1px solid #8c6239;
 }
 p {
-  font-size: 2.7rem;
+  font-size: 1.5rem;
 }
 p.justify {
   text-align: justify;
@@ -593,9 +608,9 @@ p a:hover {
 hr.myhr {
   border-top: 1px solid #8c6239;
 }
-.row {
-  display: table;
-}
+/*.row{
+    display: table;
+}*/
 .margin-top {
   margin-top: 4rem;
 }

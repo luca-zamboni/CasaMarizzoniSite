@@ -10,4 +10,11 @@ import {Router, ActivatedRoute, Params} from '@angular/router';
 })
 export class AppComponent {
     title = 'Testo';
+
+    isAdmin() {
+        var href = location.href;
+        var last = href.substr(href.lastIndexOf('/') + 1)
+        return last == "admin";
+    }
+
 }

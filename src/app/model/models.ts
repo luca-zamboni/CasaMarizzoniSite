@@ -9,3 +9,8 @@ export class Apartments {
     description:string
     images:string[]
 }
+
+export class BigData {
+    apartments:Apartments[]
+    itemHeader:ItemHeader[]
+}

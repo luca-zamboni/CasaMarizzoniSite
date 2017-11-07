@@ -93,13 +93,10 @@
 
         var images = Array();
         var desc = Array();
-        var immm = $(this)[0].children;
-        console.log(immm);
-        for (var i = 0; i < $(this)[0].children.length; i++) {
-
-            images.push($(this)[0].children[i].attr('src'));
-            desc.push($(this)[0].children[i].attr('alt'));
-
+        var immm = $(this).children();
+        for (var i = 0; i < immm.length; i++) {
+            images.push($(immm[i]).attr('src'));
+            desc.push($(immm[i]).attr('alt'));
         }
         //$(this)[0].children.each(function() {});
 

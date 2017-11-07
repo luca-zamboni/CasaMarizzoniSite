@@ -1,0 +1,13 @@
+
+<div class="container">
+    <div class="row" *ngFor="let appa of data.apartments">
+        <div class="col-sm">
+            <mat-form-field>
+                <input matInput [(ngModel)]="appa.name" >
+            </mat-form-field>
+        </div>
+        <div class="col-sm">
+            <p>{{appa.description}}</p>
+        </div>
+    </div>
+</div>
