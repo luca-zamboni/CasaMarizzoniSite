@@ -9,7 +9,7 @@ import {Router, ActivatedRoute, Params} from '@angular/router';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    title = 'Testo';
+    title = 'Testo';  
 
     isAdmin() {
         var href = location.href;
