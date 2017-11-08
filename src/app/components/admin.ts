@@ -15,10 +15,16 @@ import {
     selector:'admin',
     templateUrl: '../templates/admin.html'
 })
-export class AdminComponent {
-    constructor(private dataService: DataService) { }
-    data: BigData = this.dataService.getAllData();
+export class AdminComponent  implements OnInit {
 
+    constructor(private dataService: DataService) { }
+    data: BigData = undefined;
+
+    ngOnInit () {
+        this.dataService.getAllData().then(data =>{
+            this.data = <BigData> data;
+        });
+    }
 
 
 }

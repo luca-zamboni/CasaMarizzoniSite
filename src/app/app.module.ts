@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule }   from '@angular/forms'
 import { RouterModule, Routes } from '@angular/router';
+import {HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from "./components/home";
@@ -53,7 +54,8 @@ const appRoutes: Routes = [
         ),
         BrowserModule.withServerTransition({appId: 'angular-universal-demo'}),
         FormsModule,
-        MatCheckboxModule,
+        HttpClientModule,
+        //MatCheckboxModule,
     ],
     providers: [DataService],
     bootstrap: [AppComponent]

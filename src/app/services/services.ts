@@ -1,7 +1,6 @@
 import { Component, Input, Injectable, OnInit } from '@angular/core';
-import { Apartments  } from '../model/models'
-import { ItemHeader } from '../model/models'
-import { BigData } from '../model/models'
+import { BigData, TextItem, ItemHeader,Apartments } from '../model/models'
+import {HttpClient} from '@angular/common/http';
 
 var APARTMENTS : Apartments[] = [
     {
@@ -18,20 +17,25 @@ var HEADER_ITEMS : ItemHeader[] = [
 ]
 
 var BIG_DATA : BigData ={
-        apartments:APARTMENTS, itemHeader:HEADER_ITEMS
+    apartments:APARTMENTS, itemHeader:HEADER_ITEMS, generic:[
+        {
+            id:"paragrafo-home",
+            text:"Benvenuti al sud"
+        }
+    ]
 }
 
 @Injectable()
 export class DataService {
-    getApartments() : Apartments[]{
-        return APARTMENTS;
-    }
 
-    getHeaderItems() : ItemHeader[]{
-        return HEADER_ITEMS;
-    }
+    constructor(private http: HttpClient) {}
 
-    getAllData() : BigData{
-        return BIG_DATA;
+    getAllData() {
+        var promise = new Promise((resolve, reject) => {
+            this.http.get('/data.json').subscribe(data => {
+                resolve(data);
+            });
+        });
+        return promise;
     }
 }

@@ -1,5 +1,5 @@
 
-<admin></admin>
+<admin *ngIf="isAdmin()"></admin>
 
 <header *ngIf="!isAdmin()" class="indexhead"></header>
 <router-outlet *ngIf="!isAdmin()"></router-outlet>

@@ -1,0 +1,16 @@
+{
+    "apartments":[{
+        "name":"ORNICA", "description":"Bellissimo", "images":[]
+    }],
+    "itemHeader":[{
+        "text":"img 1", "link":"./assets/img/slider/slider-1.jpg"
+    },{
+        "text":"img 2", "link":"./assets/img/slider/slider-2.jpg"
+    }],
+    "generic":[
+        {
+            "id":"paragrafo-home",
+            "text":"Benvenuti al sud"
+        }
+    ]
+}

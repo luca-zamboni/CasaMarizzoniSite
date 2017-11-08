@@ -9,11 +9,17 @@ declare var $ :any;
     selector: 'header',
     templateUrl: '../templates/header.html'
 })
-export class HeaderComponent implements AfterViewInit  {
+export class HeaderComponent implements AfterViewInit, OnInit  {
 
     constructor(private dataService: DataService) { }
 
-    items: ItemHeader[] = this.dataService.getHeaderItems();
+    items: ItemHeader[];
+
+    ngOnInit() {
+        this.dataService.getAllData().then(function(data) {
+            console.log(data,"header")
+        });
+    }
 
     ngAfterViewInit() {
         console.log(this.items);

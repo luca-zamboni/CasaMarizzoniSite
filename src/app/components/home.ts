@@ -7,9 +7,17 @@ import { DataService } from '../services/services'
 @Component({
     templateUrl: '../templates/home.html'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+
     constructor(private dataService: DataService) { }
-    data: BigData = this.dataService.getAllData();
+    data: BigData;
+
+    ngOnInit () {
+        this.dataService.getAllData().then(function(data){
+            console.log(data,"jnjansd");
+        });
+    }
+
 
     title = 'Sono nella fantasmagarica home';
 

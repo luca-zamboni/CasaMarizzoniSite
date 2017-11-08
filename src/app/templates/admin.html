@@ -1,11 +1,26 @@
-
-<div class="container">
-    <div class="row" *ngFor="let appa of data.apartments">
-        <div class="col-sm">
-                <input matInput [(ngModel)]="appa.name" >
+<div *ngIf="!data">
+    Lodding...
+</div>
+<div *ngIf="data">
+    <div class="container">
+        <h2>Apartament</h2>
+        <div class="row" *ngFor="let appa of data.apartments">
+            <div class="col-sm">
+                <input [(ngModel)]="appa.name" >
+            </div>
+            <div class="col-sm">
+                <textarea [(ngModel)]="appa.description"></textarea>
+            </div>
         </div>
-        <div class="col-sm">
-            <p>{{appa.description}}</p>
+    </div>
+
+    <div class="container">
+        <h2>Generic text</h2>
+        <div class="row" *ngFor="let item of data.generic">
+            <div class="col-md-2">{{item.id}}</div>
+            <div class="col-md-10">
+                <textarea class="form-control" [(ngModel)]="item.text"></textarea>
+            </div>
         </div>
     </div>
 </div>
