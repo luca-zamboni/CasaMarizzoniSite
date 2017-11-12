@@ -8,7 +8,10 @@ export class MenuItem {
 
 const ITEMS : MenuItem[] = [
     {route:"home", text:"Home"},
-    {route:"appartamenti", text:"Appartamenti"}
+    {route:"appartamenti", text:"Appartamenti"},
+    {route:"benessere", text:"Centro benessere"},
+    {route:"valdipejo", text:"Val di Pejo"},
+    {route:"prezzi", text:"Prezzi"},
 ]
 
 @Component({

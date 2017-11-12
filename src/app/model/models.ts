@@ -10,13 +10,8 @@ export class Apartments {
     images:string[]
 }
 
-export class TextItem {
-    id:string
-    text:string
-}
-
 export class BigData {
     apartments:Apartments[]
     itemHeader:ItemHeader[]
-    generic:TextItem[]
+    generic:any
 }

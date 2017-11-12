@@ -16,10 +16,15 @@
 
     <div class="container">
         <h2>Generic text</h2>
-        <div class="row" *ngFor="let item of data.generic">
-            <div class="col-md-2">{{item.id}}</div>
-            <div class="col-md-10">
-                <textarea class="form-control" [(ngModel)]="item.text"></textarea>
+        <div class="row" *ngFor="let item of data.generic | keys">
+            <div class="col-md-1">{{item.key}}</div>
+            <div class="col-md-11">
+                <div class="row" *ngFor="let item2 of item.value | keys">
+                    <div class="col-md-1">{{item2.key}}</div>
+                    <div class="col-md-11">
+                        <textarea class="form-control" [(ngModel)]="item2.value" (ngModelChange)="salvaGeneric(item.key, item2.key, item2.value)"></textarea>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

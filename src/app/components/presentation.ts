@@ -3,9 +3,9 @@ import {Router, ActivatedRoute, Params} from '@angular/router';
 
 
 @Component({
-    selector:'section',
-    templateUrl: '../templates/section.html'
+    selector:'presentation',
+    templateUrl: '../templates/presentation.html'
 })
-export class SectionComponent {
+export class PresentationComponent {
     @Input() data:any;
 }

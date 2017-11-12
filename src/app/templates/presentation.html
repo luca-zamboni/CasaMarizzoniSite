@@ -1,0 +1,29 @@
+<div class="row presentation marrone-chiaro">
+    <div *ngIf="data.imgLeft" class="col-md-6 col-sm-6 vcenter grid d.classimg">
+        <figure class="effect-bubba">
+            <img src="{{data.img}}" alt="img02" />
+            <figcaption>
+                <h2> <span>{{data.titleimg}}</span></h2>
+                <p>{{data.descimg}}</p>
+                <a href="{{data.link}}">{{data.tlink}}</a>
+            </figcaption>
+        </figure>
+    </div>
+    <div class="col-md-6 col-sm-6 vcenter">
+        <div class="padded">
+            <h1>{{data.title}}</h1>
+            <hr class="myhr">
+            <p class="justify">{{data.text}}</p>
+        </div>
+    </div>
+    <div *ngIf="!data.imgLeft" class="col-md-6 col-sm-6 vcenter grid d.classimg">
+        <figure class="effect-bubba">
+            <img src="{{data.img}}" alt="img02" />
+            <figcaption>
+                <h2> <span>{{data.titleimg}}</span></h2>
+                <p>{{data.descimg}}</p>
+                <a href="{{data.link}}">{{data.tlink}}</a>
+            </figcaption>
+        </figure>
+    </div>
+</div>

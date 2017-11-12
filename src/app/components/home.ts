@@ -13,12 +13,10 @@ export class HomeComponent implements OnInit {
     data: BigData;
 
     ngOnInit () {
-        this.dataService.getAllData().then(function(data){
-            console.log(data,"jnjansd");
+        this.dataService.getAllData().then(data =>{
+            this.data=data as BigData;
         });
     }
-
-
     title = 'Sono nella fantasmagarica home';
 
 }

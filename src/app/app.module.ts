@@ -11,7 +11,8 @@ import { AppartamentiComponent } from "./components/appartamenti";
 import { MenuComponent } from "./components/menu";
 import { SectionComponent } from "./components/section";
 import { HeaderComponent } from "./components/header";
-import { AdminComponent } from "./components/admin";
+import { AdminComponent, KeysPipe } from "./components/admin";
+import { PresentationComponent } from "./components/presentation";
 
 import { ModifyTextDirective } from "./directives/directive";
 
@@ -26,6 +27,7 @@ const appRoutes: Routes = [
     },{
         path: 'home',
         component: HomeComponent
+
     },{
         path: 'appartamenti',
         component: AppartamentiComponent
@@ -44,11 +46,12 @@ const appRoutes: Routes = [
         SectionComponent,
         HeaderComponent,
         AdminComponent,
-
+        PresentationComponent,
         ModifyTextDirective,
+        KeysPipe,
     ],
     imports: [
-        BrowserAnimationsModule,
+        //BrowserAnimationsModule,
         RouterModule.forRoot(
             appRoutes
         ),

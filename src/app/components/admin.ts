@@ -2,6 +2,7 @@ import { Component, Input, Injectable, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { BigData } from '../model/models'
 import { DataService } from '../services/services'
+import { PipeTransform, Pipe } from '@angular/core';
 import {
   MatButtonModule,
   MatMenuModule,
@@ -10,6 +11,17 @@ import {
   MatCardModule
 } from '@angular/material';
 
+
+@Pipe({name: 'keys'})
+export class KeysPipe implements PipeTransform {
+    transform(value, args:string[]) : any {
+      let keys = [];
+      for (let key in value) {
+        keys.push({key: key, value: value[key]});
+      }
+      return keys;
+    }
+}
 
 @Component({
     selector:'admin',
@@ -26,5 +38,9 @@ export class AdminComponent  implements OnInit {
         });
     }
 
+    salvaGeneric (key1, key2, value) {
+        console.log(key1, key2, value)
+        this.data.generic[key1][key2] = value;
+    }
 
 }

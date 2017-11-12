@@ -1,16 +1,107 @@
 {
-    "apartments":[{
-        "name":"ORNICA", "description":"Bellissimo", "images":[]
+    "apartments": [{
+        "name": "Arnica",
+        "description": "Bellissimo",
+        "images": ["assets/img/appartamenti/genziana/1.jpg"]
+    }, {
+        "name": "Stella Alpina",
+        "description": "Bellissimo",
+        "images": ["assets/img/appartamenti/genziana/1.jpg"]
+    }, {
+        "name": "Rododendro",
+        "description": "Bellissimo",
+        "images": ["assets/img/appartamenti/genziana/1.jpg"]
+    }, {
+        "name": "Genziana",
+        "description": "Bellissimo",
+        "images": ["assets/img/appartamenti/genziana/1.jpg"]
+    }, {
+        "name": "Nigritella",
+        "description": "Bellissimo",
+        "images": ["assets/img/appartamenti/genziana/1.jpg"]
     }],
-    "itemHeader":[{
-        "text":"img 1", "link":"./assets/img/slider/slider-1.jpg"
-    },{
-        "text":"img 2", "link":"./assets/img/slider/slider-2.jpg"
+    "itemHeader": [{
+        "text": "img 1",
+        "link": "./assets/img/slider/slider-1.jpg"
+    }, {
+        "text": "img 2",
+        "link": "./assets/img/slider/slider-2.jpg"
+    }, {
+        "text": "img 3",
+        "link": "./assets/img/slider/slider-3.jpg"
+    }, {
+        "text": "img 4",
+        "link": "./assets/img/slider/slider-4.jpg"
+    }, {
+        "text": "img 5",
+        "link": "./assets/img/slider/slider-5.jpg"
+    }, {
+        "text": "img 6",
+        "link": "./assets/img/slider/slider-6.jpg"
+    }, {
+        "text": "img 7",
+        "link": "./assets/img/slider/slider-7.jpg"
     }],
-    "generic":[
-        {
-            "id":"paragrafo-home",
-            "text":"Benvenuti al sud"
+    "generic": {
+        "Info": {
+            "title": "Casa Marizzoni",
+            "subtitle": "Val di Pejo",
+            "email": "info@hotelsantamaria.it",
+            "tel": "Tel :+39   0463 753242",
+            "fax": "Fax: +39 0463 74333",
+            "indirizzo": "Via dei Cavai, 23, 38024 Peio Fonti TN ",
+            "desc1": "Il sito è di proprietà di Marizzoni Flavio",
+            "desc2": "Albergo S.Maria Via Dei Cavai, 8 38020 Pejo Fonti Val di sole Trentino",
+            "desc3": "P.iva 01308080223 C.Fisc.MRZ FLV 65 C20 B157J"
+        },
+        "HomePrimaSez": {
+            "Title": "Bevenuti a Casa Marizzoni",
+            "Subtitle": " in Val di Pejo, Val di Sole, Trentino",
+            "Text": "nell' incantevole Val di Pejo immersa nel parco Nazionale dello Stelvio. Vi proponiamo 5 appartamenti in affitto in una nuovissima struttura. Ogni appartamento è dotato di tutti i comfort. La casa è situata a Peio Fonti a pochi passi dagli impianti di risalita e dalle rinomate terme di Pejo. Visita anche il sito del nostro Hotel all' indirizzo",
+            "Link": "http://www.hotelsantamaria.it/",
+            "LinkText": "Hotel Santa Maria"
+        },
+        "HomePres1": {
+            "title": "La nostra Casa",
+            "text": "Ciapa lapa lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "img": "assets/img/esterni/4.jpg",
+            "titleimg": "Casa Marizzoni",
+            "descimg": "Machebbelo sto ssito cavolo",
+            "linkimg": "",
+            "imgLeft": true,
+            "classimg": "hidden-xs"
+        },
+        "HomePres2": {
+            "title": "I nostri appartamenti ",
+            "text": "Ciapa lapa lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "img": "assets/img/appartamenti/genziana/1.jpg",
+            "titleimg": "Super bellie",
+            "descimg": "E super nuovi",
+            "linkimg": "#",
+            "imgLeft": false,
+            "classimg": ""
+        },
+        "HomePres3": {
+            "title": "Piscina e Wellness",
+            "text": "Ciapa lapa lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "img": "assets/img/appartamenti/genziana/1.jpg",
+            "titleimg": "Super bellie",
+            "descimg": "E super nuovi",
+            "linkimg": "#",
+            "imgLeft": true,
+            "classimg": ""
+        },
+        "HomePres4": {
+            "title": "La Val di Pejo",
+            "text": "Ciapa lapa lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "img": "assets/img/appartamenti/genziana/1.jpg",
+            "titleimg": "Super bellie",
+            "descimg": "E super nuovi",
+            "linkimg": "#",
+            "imgLeft": false,
+            "classimg": ""
         }
-    ]
+
+
+    }
 }

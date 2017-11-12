@@ -1,2 +1,11 @@
-<h1 class="center">{{title}}<h1>
-<section></section>
+
+<span *ngIf="data">
+    <section [data]="data.generic.HomePrimaSez"></section>
+    <div id="montagna" class="marrone-scuro">
+        <img src="assets/img/montagne.svg"/>
+    </div>
+    <presentation [data]="data.generic.HomePres1"></presentation>
+    <presentation [data]="data.generic.HomePres2"></presentation>
+    <presentation [data]="data.generic.HomePres3"></presentation>
+    <presentation [data]="data.generic.HomePres4"></presentation>
+</span>

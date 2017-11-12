@@ -1,41 +1,29 @@
 import { Component, Input, Injectable, OnInit } from '@angular/core';
-import { BigData, TextItem, ItemHeader,Apartments } from '../model/models'
+import { BigData, ItemHeader,Apartments } from '../model/models'
 import {HttpClient} from '@angular/common/http';
-
-var APARTMENTS : Apartments[] = [
-    {
-        name:"ARNICA", description:"Bellissimo", images:[]
-    }
-]
-
-var HEADER_ITEMS : ItemHeader[] = [
-    {
-        text:"img 1", link:"./assets/img/slider/slider-1.jpg"
-    },{
-        text:"img 2", link:"./assets/img/slider/slider-2.jpg"
-    }
-]
-
-var BIG_DATA : BigData ={
-    apartments:APARTMENTS, itemHeader:HEADER_ITEMS, generic:[
-        {
-            id:"paragrafo-home",
-            text:"Benvenuti al sud"
-        }
-    ]
-}
 
 @Injectable()
 export class DataService {
 
     constructor(private http: HttpClient) {}
+    data:BigData;
+    loaded=false;
 
     getAllData() {
-        var promise = new Promise((resolve, reject) => {
+        if(this.loaded) {
+            var promiseLocal = new Promise((resolve, reject) => {
+                console.log("jnajsnd")
+                resolve(this.data);
+            });
+            return promiseLocal;
+        }
+        var promiseHttp = new Promise((resolve, reject) => {
             this.http.get('/data.json').subscribe(data => {
-                resolve(data);
+                resolve((data) as BigData );
+                this.loaded = true;
+                this.data = <BigData>data;
             });
         });
-        return promise;
+        return promiseHttp;
     }
 }

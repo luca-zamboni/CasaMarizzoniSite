@@ -1,5 +1,22 @@
+<span *ngIf="loaded">
+    <admin *ngIf="isAdmin()"></admin>
 
-<admin *ngIf="isAdmin()"></admin>
+    <header *ngIf="!isAdmin()" class="indexhead"></header>
 
-<header *ngIf="!isAdmin()" class="indexhead"></header>
-<router-outlet *ngIf="!isAdmin()"></router-outlet>
+    <router-outlet *ngIf="!isAdmin()"></router-outlet>
+
+    <footer *ngIf="!isAdmin()">
+        <div class="container"><br>
+            <h1 class="center">Contatti</h1>
+            <h2 class="center"> <a href="#">{{data.generic.Info.email}}</a></h2>
+            <h2 class="center">{{data.generic.Info.tel}}</h2>
+            <h2 class="center">{{data.generic.Info.fax}}</h2>
+            <h3 class="center">{{data.generic.Info.indirizzo}}</h3>
+            <p class="center margin-top">
+                {{data.generic.Info.desc1}} <br>
+                {{data.generic.Info.desc2}} <br>
+                {{data.generic.Info.desc3}}
+            </p>
+        </div>
+    </footer>
+</span>
