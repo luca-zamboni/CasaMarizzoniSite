@@ -6,7 +6,7 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li *ngFor="let item of items; let i = index" class="nav-item">
+            <li *ngFor="let item of items; let i = index" class="nav-item" [ngClass]="{'active' : getCurrentRoute() == item.route}">
                 <a class="nav-link"  routerLink="{{item.route}}">{{item.text}} <span class="sr-only"></span></a>
             </li>
         </ul>

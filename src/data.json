@@ -2,23 +2,28 @@
     "apartments": [{
         "name": "Arnica",
         "description": "Bellissimo",
-        "images": ["assets/img/appartamenti/genziana/1.jpg"]
+        "images": ["assets/img/appartamenti/genziana/1.jpg"],
+        "imagesDesc":["Descrizione"]
     }, {
         "name": "Stella Alpina",
         "description": "Bellissimo",
-        "images": ["assets/img/appartamenti/genziana/1.jpg"]
+        "images": ["assets/img/appartamenti/genziana/1.jpg"],
+        "imagesDesc":["Descrizione1"]
     }, {
         "name": "Rododendro",
         "description": "Bellissimo",
-        "images": ["assets/img/appartamenti/genziana/1.jpg"]
+        "images": ["assets/img/appartamenti/genziana/1.jpg"],
+        "imagesDesc":["Descrizione2"]
     }, {
         "name": "Genziana",
         "description": "Bellissimo",
-        "images": ["assets/img/appartamenti/genziana/1.jpg"]
+        "images": ["assets/img/appartamenti/genziana/1.jpg"],
+        "imagesDesc":["Descrizione3"]
     }, {
         "name": "Nigritella",
         "description": "Bellissimo",
-        "images": ["assets/img/appartamenti/genziana/1.jpg"]
+        "images": ["assets/img/appartamenti/genziana/1.jpg"],
+        "imagesDesc":["Descrizione4"]
     }],
     "itemHeader": [{
         "text": "img 1",
@@ -100,6 +105,14 @@
             "linkimg": "#",
             "imgLeft": false,
             "classimg": ""
+        },
+
+        "AppaPrimaSez": {
+            "Title": "I nostri appartamenti",
+            "Subtitle": "",
+            "Text": "nell' incantevole Val di Pejo immersa nel parco Nazionale dello Stelvio. Vi proponiamo 5 appartamenti in affitto in una nuovissima struttura. Ogni appartamento è dotato di tutti i comfort. La casa è situata a Peio Fonti a pochi passi dagli impianti di risalita e dalle rinomate terme di Pejo. Visita anche il sito del nostro Hotel all' indirizzo",
+            "Link": "",
+            "LinkText": ""
         }
 
 

@@ -39,7 +39,6 @@ export class AdminComponent  implements OnInit {
     }
 
     salvaGeneric (key1, key2, value) {
-        console.log(key1, key2, value)
         this.data.generic[key1][key2] = value;
     }
 

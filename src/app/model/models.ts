@@ -8,6 +8,7 @@ export class Apartments {
     name:string
     description:string
     images:string[]
+    imagesDesc:string[]
 }
 
 export class BigData {

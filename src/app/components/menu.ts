@@ -21,4 +21,11 @@ const ITEMS : MenuItem[] = [
 export class MenuComponent {
     title = "Casa Marizzoni"
     items = ITEMS;
+    current = ""
+
+    getCurrentRoute() {
+        var href = location.href;
+        var last = href.substr(href.lastIndexOf('/') + 1)
+        return last;
+    }
 }
