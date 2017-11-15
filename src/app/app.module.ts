@@ -14,8 +14,6 @@ import { HeaderComponent } from "./components/header";
 import { AdminComponent, KeysPipe } from "./components/admin";
 import { PresentationComponent } from "./components/presentation";
 
-import { ModifyTextDirective } from "./directives/directive";
-
 import { DataService } from "./services/services";
 import { MatCheckboxModule} from '@angular/material';
 
@@ -47,7 +45,6 @@ const appRoutes: Routes = [
         HeaderComponent,
         AdminComponent,
         PresentationComponent,
-        ModifyTextDirective,
         KeysPipe,
     ],
     imports: [

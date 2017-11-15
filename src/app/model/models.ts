@@ -16,3 +16,15 @@ export class BigData {
     itemHeader:ItemHeader[]
     generic:any
 }
+
+export class Presentation {
+    title:string
+    text:string
+    img:string
+    titleimg:string
+    descimg:string
+    linkimg:string
+    classimg:string
+    imgLeft:boolean
+    imagesGallery:string[]
+}

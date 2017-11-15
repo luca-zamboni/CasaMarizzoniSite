@@ -1,27 +1,27 @@
 {
     "apartments": [{
         "name": "Arnica",
-        "description": "Bellissimo",
+        "description": "Lorem impsum dolores delle basse mantovane",
         "images": ["assets/img/appartamenti/genziana/1.jpg"],
         "imagesDesc":["Descrizione"]
     }, {
         "name": "Stella Alpina",
-        "description": "Bellissimo",
+        "description": "Lorem impsum dolores delle basse mantovane",
         "images": ["assets/img/appartamenti/genziana/1.jpg"],
         "imagesDesc":["Descrizione1"]
     }, {
         "name": "Rododendro",
-        "description": "Bellissimo",
+        "description": "Lorem impsum dolores delle basse mantovane",
         "images": ["assets/img/appartamenti/genziana/1.jpg"],
         "imagesDesc":["Descrizione2"]
     }, {
         "name": "Genziana",
-        "description": "Bellissimo",
+        "description": "Lorem impsum dolores delle basse mantovane",
         "images": ["assets/img/appartamenti/genziana/1.jpg"],
         "imagesDesc":["Descrizione3"]
     }, {
         "name": "Nigritella",
-        "description": "Bellissimo",
+        "description": "Lorem impsum dolores delle basse mantovane",
         "images": ["assets/img/appartamenti/genziana/1.jpg"],
         "imagesDesc":["Descrizione4"]
     }],
@@ -110,7 +110,7 @@
         "AppaPrimaSez": {
             "Title": "I nostri appartamenti",
             "Subtitle": "",
-            "Text": "nell' incantevole Val di Pejo immersa nel parco Nazionale dello Stelvio. Vi proponiamo 5 appartamenti in affitto in una nuovissima struttura. Ogni appartamento è dotato di tutti i comfort. La casa è situata a Peio Fonti a pochi passi dagli impianti di risalita e dalle rinomate terme di Pejo. Visita anche il sito del nostro Hotel all' indirizzo",
+            "Text": "La nostra casa è in tipico stile montano con arredamenti funzionali e moderni. Appartamenti tutti con balcone, dotati di telefono, TV, connessione internet Wi-Fi, microonde e lavastoviglie. Prima fornitura di biancheria per il letto e il bagno inclusa. Lavanderia comune: lavatrice, asciugatrice, ferro da stiro, asse da stiro e stendino. Deposito Sci e scarponi. Parcheggio. Garage coperto e riscaldato supplemento di €. 40,00 a settimana.",
             "Link": "",
             "LinkText": ""
         }

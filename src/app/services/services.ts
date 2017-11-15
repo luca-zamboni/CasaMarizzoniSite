@@ -12,7 +12,6 @@ export class DataService {
     getAllData() {
         if(this.loaded) {
             var promiseLocal = new Promise((resolve, reject) => {
-                console.log("jnajsnd")
                 resolve(this.data);
             });
             return promiseLocal;

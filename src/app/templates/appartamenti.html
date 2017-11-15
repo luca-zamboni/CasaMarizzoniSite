@@ -2,8 +2,8 @@
 
     <section [data]="data.generic.AppaPrimaSez"></section>
 
-    <div *ngFor="let appa of data.apartments" class="">
-
+    <div *ngFor="let pre of presList" class="">
+        <presentation [data]="pre"></presentation>
     </div>
 
 
@@ -26,20 +26,5 @@
             </div>
         </div>
     </div>-->
-
-    <div class="marrone-chiaro">
-        <h2 class="center">{{activeAppa.name}}</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <figure class="appa-figura" [ngStyle]="{ 'background-url': 'url('+article.uri+')'}">
-                    <img src="" alt="">
-                    <span></span>
-                </figure>
-            </div>
-            <div class="col-md-6">
-
-            </div>
-        </div>
-    </div>
 
 </div>

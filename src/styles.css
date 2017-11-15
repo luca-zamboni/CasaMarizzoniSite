@@ -505,22 +505,8 @@ header .header-content .promo-cont .promotion-cicle:before {
 .row-present grid {
   padding: 10px;
 }
-.presentation {
-  margin-left: 0;
-  margin-right: 0;
-  border-bottom: 1px solid #fff;
-}
 .presentation h1 {
-  color: #8c6239;
-  font-weight: 700;
-}
-.presentation > div {
-  padding-right: 0px;
-  padding-left: 0px;
-}
-.presentation > div p {
-  font-size: 2rem;
-  padding: 10px;
+  margin-left: 1.5rem;
 }
 .table.mytable {
   text-align: center;
@@ -603,6 +589,9 @@ p a {
 }
 p a:hover {
   color: #fff;
+}
+.row {
+  width: 100%;
 }
 .shadowed {
   -webkit-box-shadow: inset 2px 100px 111px -83px rgba(0, 0, 0, 0.93);
