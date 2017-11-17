@@ -1,5 +1,6 @@
 import { Component, Input, Injectable, OnInit } from '@angular/core';
 import {Router, ActivatedRoute, Params} from '@angular/router';
+import { Meta } from '@angular/platform-browser';
 import { BigData } from './model/models'
 import { DataService } from './services/services'
 
@@ -10,6 +11,9 @@ import { DataService } from './services/services'
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+    constructor(private dataService: DataService, private meta: Meta) { }
+
     title = 'Testo';
     data: BigData;
     loaded=false;
@@ -20,13 +24,18 @@ export class AppComponent {
         return last == "admin";
     }
 
-    constructor(private dataService: DataService) { }
+
     ngOnInit () {
         this.dataService.getAllData().then(data =>{
 
             this.data=data as BigData;
             this.loaded = true;
         });
+
+        this.meta.addTags([
+            { name: 'twitter:title', content: 'Content Title' },
+            { property: 'og:title', content: 'Content Title' }
+        ]);
     }
 
 }

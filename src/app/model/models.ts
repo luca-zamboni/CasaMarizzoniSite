@@ -5,6 +5,7 @@ export class ItemHeader {
 }
 
 export class Apartments {
+    id:number
     name:string
     description:string
     images:string[]
@@ -18,6 +19,7 @@ export class BigData {
 }
 
 export class Presentation {
+    id:number
     title:string
     text:string
     img:string
@@ -27,4 +29,5 @@ export class Presentation {
     classimg:string
     imgLeft:boolean
     imagesGallery:string[]
+    imagesDesc:string[]
 }

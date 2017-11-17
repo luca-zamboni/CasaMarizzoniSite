@@ -1,25 +1,30 @@
 {
     "apartments": [{
+        "id":"0",
         "name": "Arnica",
-        "description": "Lorem impsum dolores delle basse mantovane",
+        "description": "Affitto 2+2 posti letto: una camera da letto più 2 pax in divano letto nel soggiorno-cucina. Soggiorno dotato di smart TV 42 pollici. Cucina dotata di forno a microonde, piastre ad induzione e lavastoviglie. Nel bagno troverete anche l'asciugacapelli e nell' armadio la cassaforte. ",
         "images": ["assets/img/appartamenti/genziana/1.jpg"],
         "imagesDesc":["Descrizione"]
     }, {
+        "id":"1",
         "name": "Stella Alpina",
         "description": "Lorem impsum dolores delle basse mantovane",
         "images": ["assets/img/appartamenti/genziana/1.jpg"],
         "imagesDesc":["Descrizione1"]
     }, {
+        "id":"2",
         "name": "Rododendro",
         "description": "Lorem impsum dolores delle basse mantovane",
         "images": ["assets/img/appartamenti/genziana/1.jpg"],
         "imagesDesc":["Descrizione2"]
     }, {
+        "id":"3",
         "name": "Genziana",
         "description": "Lorem impsum dolores delle basse mantovane",
         "images": ["assets/img/appartamenti/genziana/1.jpg"],
         "imagesDesc":["Descrizione3"]
     }, {
+        "id":"4",
         "name": "Nigritella",
         "description": "Lorem impsum dolores delle basse mantovane",
         "images": ["assets/img/appartamenti/genziana/1.jpg"],

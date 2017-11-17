@@ -2,24 +2,29 @@
     <div *ngIf="data.imgLeft" class="col-md-6 col-sm-6 vcenter grid d.classimg">
         <figure class="effect-bubba">
             <img src="{{data.img}}" alt="img02" />
-            <figcaption>
+            <figcaption *ngIf="descimg">
                 <h2> <span>{{data.titleimg}}</span></h2>
                 <p>{{data.descimg}}</p>
                 <a href="{{data.link}}">{{data.tlink}}</a>
             </figcaption>
         </figure>
     </div>
-    <div class="col-md-6 col-sm-6 vcenter">
+    <div class="col-md-6 col-sm-6 vcenter grid">
         <div class="padded">
             <h1 title-pres>{{data.title}}</h1>
             <hr class="myhr">
-            <p class="justify">{{data.text}}</p>
+            <p class="justify" [innerHtml]="data.text"></p>
+            <div *ngIf="data.imagesGallery" class="img-gallery">
+                <a  href="{{im}}" title="{{data.imagesDesc[i]}}" class="lightbox{{data.id}}" *ngFor="let im of data.imagesGallery; let i = index">
+                    <img class="img-responsive" src="{{im}}" alt="img02" />
+                </a>
+            </div>
         </div>
     </div>
     <div *ngIf="!data.imgLeft" class="col-md-6 col-sm-6 vcenter grid d.classimg">
         <figure class="effect-bubba">
             <img src="{{data.img}}" alt="img02" />
-            <figcaption>
+            <figcaption *ngIf="descimg">
                 <h2> <span>{{data.titleimg}}</span></h2>
                 <p>{{data.descimg}}</p>
                 <a href="{{data.link}}">{{data.tlink}}</a>

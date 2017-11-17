@@ -29,7 +29,7 @@ header {
         .shadowed;
     }
 
-.shadowed;
+    .shadowed;
 }
 
 header.indexhead{
@@ -174,15 +174,15 @@ header .header-content{
         .promotion-cicle:before{
             content: " ";
             border-radius: 9999999px;
-          position: absolute;
+            position: absolute;
 
-          z-index: -1;
-          @dist:-11px;
-          top: @dist;
-          left: @dist;
-          right: @dist;
-          bottom: @dist;
-          border: 3px dashed @marrone-chiaro;
+            z-index: -1;
+            @dist:-11px;
+            top: @dist;
+            left: @dist;
+            right: @dist;
+            bottom: @dist;
+            border: 3px dashed @marrone-chiaro;
         }
     }
 }
@@ -209,6 +209,28 @@ header .header-content{
 .presentation {
     h1 {
         margin-left: 1.5rem;
+        text-align: left;
+        font-weight: 800;
+        color: @marrone-scuro;
+    }
+    .grid{
+        padding: 0px;
+    }
+
+    .img-gallery{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-color: @marrone-scuro;
+        height: 15%;
+        img{
+            height: 100%;
+            position: relative;
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+        }
     }
 }
 
@@ -332,6 +354,8 @@ p{
 
 .row{
     width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .shadowed {

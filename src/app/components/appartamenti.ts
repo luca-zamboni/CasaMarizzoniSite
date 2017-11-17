@@ -26,15 +26,17 @@ export class AppartamentiComponent {
         var ap = this.data.apartments;
         ap.forEach((a, i) => {
             this.presList.push({
+                id:a.id,
                 title:a.name,
                 text:a.description,
-                img:a.name,
-                titleimg:a.name,
-                descimg:a.name,
+                img:a.images[0],
+                titleimg:a.images[0],
+                descimg:undefined,
                 linkimg:a.name,
                 classimg:a.name,
                 imgLeft: i%2==0,
-                imagesGallery:[a.name]
+                imagesGallery:a.images,
+                imagesDesc:a.imagesDesc
             })
         })
         console.log(this.presList);
