@@ -12,9 +12,16 @@ export class Apartments {
     imagesDesc:string[]
 }
 
+export class MetaTag {
+    route:string
+    name:string
+    content:string
+}
+
 export class BigData {
     apartments:Apartments[]
     itemHeader:ItemHeader[]
+    meta:MetaTag[]
     generic:any
 }
 

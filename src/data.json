@@ -2,7 +2,7 @@
     "apartments": [{
         "id":"0",
         "name": "Arnica",
-        "description": "Affitto 2+2 posti letto: una camera da letto più 2 pax in divano letto nel soggiorno-cucina. Soggiorno dotato di smart TV 42 pollici. Cucina dotata di forno a microonde, piastre ad induzione e lavastoviglie. Nel bagno troverete anche l'asciugacapelli e nell' armadio la cassaforte. ",
+        "description": "Affitto 2+2 posti letto: una camera da lela cassaforte. ",
         "images": ["assets/img/appartamenti/genziana/1.jpg"],
         "imagesDesc":["Descrizione"]
     }, {
@@ -51,6 +51,15 @@
     }, {
         "text": "img 7",
         "link": "./assets/img/slider/slider-7.jpg"
+    }],
+    "meta" : [{
+        "route" : "home",
+        "name" : "keywords",
+        "content" : "appa pejo home"
+    },{
+        "route" : "appartamenti",
+        "name" : "keywords",
+        "content" : "appa pejo"
     }],
     "generic": {
         "Info": {
@@ -119,7 +128,6 @@
             "Link": "",
             "LinkText": ""
         }
-
 
     }
 }
